@@ -1,8 +1,8 @@
-# jmeter-asynchronous-http
+# jmeter-async-samplers
 
 ## Quick description
-
-A quick Jmeter plugin to handle asynchronous HTTP responses.
+Credit: pleutres/jmeter-asynchronous-http for the core idea and nanohttp impl
+A quick Jmeter plugin to handle asynchronous HTTP responses for JSON & XML
 
 The use case is the following : 
 
@@ -27,4 +27,3 @@ B (the HTTP server to be tested)
 ## To be continue...
 
 - Jmeter sample project
-- Unit tests with mockserver
