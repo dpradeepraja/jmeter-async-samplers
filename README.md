@@ -28,16 +28,16 @@ B (the HTTP server to be tested)
 ## Usage
 - NotificationReceiverCreation
 ![ReceiverCreation](/images/ReceiverCreation.PNG)
-FUNCTIONAL_ID: Unique String value, should be different for each request. Examples "Id1","1"
-CALLBACK_URI: relative path of callback url which service under test shall call. Examples "/Notify","/WaitForCompletion"
-CALLBACK_METHOD: HTTP method used. Examples "POST" "GET"
-DATA_PATH: Optional JSON path Parameter, when set will be used to extract value from incoming message body. Examples "$.name"
-EXPECTED_VALUE: Optional data validation that shall be compared with extracted value from incoming message body. Examples "John"
+1. FUNCTIONAL_ID: Unique String value, should be different for each request. Examples "Id1","1"
+1. CALLBACK_URI: relative path of callback url which service under test shall call. Examples "/Notify","/WaitForCompletion"
+1. CALLBACK_METHOD: HTTP method used. Examples "POST" "GET"
+1. DATA_PATH: Optional JSON path Parameter, when set will be used to extract value from incoming message body. Examples "$.name"
+1. EXPECTED_VALUE: Optional data validation that shall be compared with extracted value from incoming message body. Examples "John"
 
 - NotificationReceiverWait
 ![ReceiverWait](/images/ReceiverWait.PNG)
-FUNCTIONAL_ID: Unique String value, should match with corresponding Creation request. Examples "Id1","1"
-TIME_OUT_IN_SECS: # of seconds, the sampler shall wait for the callback. Examples "60"
+1. FUNCTIONAL_ID: Unique String value, should match with corresponding Creation request. Examples "Id1","1"
+1. TIME_OUT_IN_SECS: # of seconds, the sampler shall wait for the callback. Examples "60"
 
 
 ### Results
