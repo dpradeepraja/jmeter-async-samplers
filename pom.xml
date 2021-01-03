@@ -3,11 +3,11 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
                       http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>org.pleutre.jmeter.plugins</groupId>
-	<artifactId>httpAsynchronous</artifactId>
+	<groupId>org.dpradeepraja.jmeter.plugins</groupId>
+	<artifactId>httpAsyncSamplers</artifactId>
 	<packaging>jar</packaging>
 	<version>1.0</version>
-	<name>Jmeter Http Asynchronous</name>
+	<name>Jmeter Async Samplers</name>
 	<properties>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>

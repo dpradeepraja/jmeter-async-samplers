@@ -29,7 +29,7 @@ import org.mockito.Mockito;
 @RunWith(Parameterized.class)
 public class JSONReceiverTest {
 
-	private static final int TIMEOUT = 3;
+	private static final int TIMEOUT = 10;
 
 	public final String baseURI = "http://localhost:8080";
 	
@@ -49,7 +49,7 @@ public class JSONReceiverTest {
 		when(mockSampler.getParameter(NotificationReceiverCreation.CALLBACK_METHOD)).thenReturn(request.getCallbackMethod());
 		when(mockSampler.getParameter(NotificationReceiverCreation.DATA_PATH)).thenReturn(request.getDataPath());
 		when(mockSampler.getParameter(NotificationReceiverCreation.EXPECTED_VALUE)).thenReturn(request.getExpectedValue());
-		when(mockSampler.getParameter(NotificationReceiverWait.TIME_OUT_IN_SECS)).thenReturn("5");
+		when(mockSampler.getParameter(NotificationReceiverWait.TIME_OUT_IN_SECS)).thenReturn("10");
 
 		return mockSampler;
 	}

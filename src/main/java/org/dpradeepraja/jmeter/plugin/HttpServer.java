@@ -62,7 +62,10 @@ public class HttpServer extends NanoHTTPD {
 		env.put("create", "true");
 		
 		if(!uri.getScheme().equals("file"))
-			FileSystems.getFileSystem(uri);
+		{
+			LOG.debug("Filesystem initialized for uri:" + uri);
+			FileSystems.newFileSystem(uri,env);
+		}
 		Path path = Paths.get(uri);
 		LOG.info("path = " + path);
 		return new String(Files.readAllBytes(path));
