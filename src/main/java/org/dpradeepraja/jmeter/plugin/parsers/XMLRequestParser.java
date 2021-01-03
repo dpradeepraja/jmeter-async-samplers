@@ -3,11 +3,14 @@ package org.dpradeepraja.jmeter.plugin.parsers;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import org.dpradeepraja.jmeter.plugin.HttpServer;
 import org.dpradeepraja.jmeter.plugin.NotificationReceiverCreation;
 import org.dpradeepraja.jmeter.plugin.models.SubscribedRequest;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+//To use XMLRequestParser, use below line in NotificationReceiverCreation
+//private static final HttpServer httpServer = new HttpServer(new XMLRequestParser());
 public class XMLRequestParser implements RequestParser {
 	private static final Pattern PATTERN_NOTIF = Pattern.compile(".*FunctionalIdentifier>([+\\d]+)</.*StatusMessage>([\\w_]+)</.*");
 	
