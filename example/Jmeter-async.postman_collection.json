@@ -1,0 +1,64 @@
+{
+	"info": {
+		"_postman_id": "a18fb6e9-d45c-4865-9d82-5af1e4bc8784",
+		"name": "Jmeter-async",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/waitforjson",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"John\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/waitforjson",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"waitforjson"
+					]
+				},
+				"description": "Callback1"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/waitforjson2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Wonder\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/waitforjson2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"waitforjson2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
